@@ -1,0 +1,45 @@
+{
+  "title": "Блог о Bitrix и Laravel",
+  "url": "http://bitrixlaravelblog.ru/",
+  "language": "ru",
+  "description": "Статьи, заметки, новости о Bitrix и Laravel",
+  "feed": {
+    "subtitle": "Статьи, заметки, новости о Bitrix и Laravel",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "http://bitrixlaravelblog.ru/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "http://bitrixlaravelblog.ru/feed/feed.json"
+  },
+  "author": {
+    "name": "Алексей",
+    "email": "alexey.mikha1lov@yandex.ru",
+    "url": "http://bitrixlaravelblog.ru/about/"
+  },
+  "nav": [{
+    "title": "Главная",
+    "url": "/"
+  },
+  {
+    "title": "Статьи",
+    "url": "/posts"
+  },
+  {
+    "title": "Контакты",
+    "url": "/contact"
+  },
+  {
+    "title": "RSS",
+    "url": "/feed/feed.xml"
+  },
+  {
+    "title": "Поиск",
+    "url": "/search"
+  }],
+  "config": {
+    "showDateList": true,
+    "showDatePost": true
+  }
+}
