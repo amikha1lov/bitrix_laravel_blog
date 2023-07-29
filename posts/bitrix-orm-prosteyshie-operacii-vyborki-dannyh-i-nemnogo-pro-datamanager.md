@@ -1,7 +1,7 @@
 ---
 title: Bitrix ORM  - простейшие операции выборки данных и DataManager
 description: Рассмотрим базовые моменты выборки, фильтрации на примере работы с инфоблоками, а так же базовые понятия сущностей и класс DataManager
-date: 2023-07-06
+date: 2023-07-30
 tags:
   - bitrix
 layout: layouts/post.njk
