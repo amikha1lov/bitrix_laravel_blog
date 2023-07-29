@@ -1,13 +1,13 @@
 ---
 title: Bitrix ORM  - простейшие операции выборки данных и DataManager
 description: Рассмотрим базовые моменты выборки, фильтрации на примере работы с инфоблоками, а так же базовые понятия сущностей и класс DataManager
-date: 30.07.2023
+date: 2023-07-06
 tags:
   - bitrix
 layout: layouts/post.njk
 ---
 
-Несколько лет назад разработчики Bitrix решили унифицировать работу с данными и в новом ядре `D7` реализовали `ORM`. 
+Несколько лет назад разработчики Bitrix решили унифицировать работу с данными и в новом ядре `D7` реализовали `ORM`.
 
 С приходом `ORM` появились следующие понятия:
 
@@ -28,12 +28,12 @@ layout: layouts/post.njk
 
 За работу с инфоблоками отвечает сущность `IblockTable` . Она также наследуется от  `DataManager` и поэтому имеет метод `getList`.
 
-Для выборки всех данных выполним запрос без параметров 
+Для выборки всех данных выполним запрос без параметров
 
 ```php
 $query = \Bitrix\Iblock\IblockTable::getList();
 
-while ($response = $query->fetch()) { 
+while ($response = $query->fetch()) {
 	var_dump(response);
 }
 ```
@@ -67,7 +67,7 @@ $query = \Bitrix\Iblock\IblockTable::getList([
 		'ID',
 		'NAME'
 	],
-	
+
 ]);
 
 while ($response = $query->fetch()) {
@@ -75,7 +75,7 @@ while ($response = $query->fetch()) {
 }
 ```
 
-Существует и возможность создать алиасы для полей, например мы может вместо `NAME` получать `TITLE` 
+Существует и возможность создать алиасы для полей, например мы может вместо `NAME` получать `TITLE`
 
 ```php
 $query = \Bitrix\Iblock\IblockTable::getList([
@@ -83,7 +83,7 @@ $query = \Bitrix\Iblock\IblockTable::getList([
 		'ID',
 		'TITLE' => 'NAME'
 	],
-	
+
 ]);
 
 while ($response = $query->fetch()) {
